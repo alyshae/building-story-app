@@ -10,7 +10,7 @@
     </div>
     <div class="col-xs-10 col-md-4">
       <div class="thumbnail">
-          <%= image_tag(@buildings[1].main_photo, style: 'height:92%; width:100%;') %>
+          <%= link_to(image_tag(@buildings[1].main_photo, style: 'height:92%; width:100%;'), building_path(@buildings[1].id)) %>
           <div class="caption">
             <p><%= link_to @buildings[1].name, building_path(@buildings[1].id) %></p>
           </div>
@@ -18,7 +18,7 @@
     </div>
     <div class="col-xs-10 col-md-4">
       <div class="thumbnail">
-          <%= image_tag(@buildings[2].main_photo, style: 'height:92%; width:100%;') %>
+          <%= link_to(image_tag(@buildings[2].main_photo, style: 'height:92%; width:100%;'), building_path(@buildings[2].id)) %>
           <div class="caption">
             <p><%= link_to @buildings[2].name, building_path(@buildings[2].id) %></p>
           </div>
