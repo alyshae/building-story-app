@@ -91,6 +91,11 @@ body {
   padding-top: 0;
 }
 
+.topper {
+  height: 70px;
+  background-color: rgba(44, 189, 154, .7 );
+}
+
 /************
  jumbotron
 *************/
@@ -143,7 +148,7 @@ body {
 }
 
 .thumbnail-show {
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 /****************
@@ -270,9 +275,10 @@ body {
 }
 
 .buildfacts {
-  padding-top: 100px;
+  padding-top: 40px;
   background-color: rgb(108, 108, 108);
   color: orange;
+  text-align: center;
 }
 
 .nameme {
