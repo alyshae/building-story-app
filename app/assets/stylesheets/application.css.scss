@@ -56,6 +56,10 @@ body {
   padding-top: 0;
 }
 
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: rgb(44, 189, 154);
+}
+
 #custom-nav .container {
   padding-top: 10px;
   padding-bottom: 15px;
