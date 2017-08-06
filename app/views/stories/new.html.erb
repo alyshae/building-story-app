@@ -12,11 +12,8 @@
       <%= render partial: '/stories/form', object: form %>
       <%= form.hidden_field :user_id, :value => "#{current_user.id}" %>
       <%= form.file_field :img, class: 'file-upload-field'%>
-
       <%= form.submit "Submit", class: 'btn btn-default sub'%>
-
-    <%= link_to "Back to Building", building_path(@building), class: 'btn btn-default back' %>
-
+      <%= link_to "Cancel", building_path(@building), class: 'btn btn-default back' %>
   </div>
   <% end %>
 </div>
