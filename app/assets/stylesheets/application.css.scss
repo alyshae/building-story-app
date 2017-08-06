@@ -224,16 +224,21 @@ body {
   left: 7%;
 }
 
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
 .blue {
   background-color: rgb(108, 108, 108);
-  height: 850px;
 }
 
 .red {
-  background-image: image-url("buildingplans.jpg");
-  background-size:cover;
-  background-repeat:no-repeat;
-  height: 850px;
+  background-color: #C1C1C1;
 }
 
 .buildfacts {
