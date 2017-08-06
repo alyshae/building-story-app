@@ -37,4 +37,9 @@
       <% end %>
     </div>
   </div>
+  <div class="message">
+    <% flash.each do |name, msg| %>
+      <strong><%= name %>: <%= msg %></strong>
+    <% end %>
+  </div>
 </nav>

@@ -16,14 +16,7 @@
 
   </head>
   <body>
-      <%= render 'mainpage/navbar' %>
-
-    <div class = "message">
-      <% flash.each do |name, msg| %>
-        <strong><%= name %>: <%= msg %></strong>
-      <% end %>
-    </div>
-
+    <%= render 'mainpage/navbar' %>
     <%= yield %>
   </body>
 </html>
