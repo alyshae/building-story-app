@@ -27,7 +27,7 @@ body {
 #custom-nav {
   color: orange;
   height: 70px;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(44, 189, 154, .8);
   border: 0;
   box-shadow: none;
   z-index: 999;
@@ -40,6 +40,7 @@ body {
 
 #custom-nav a {
   color: orange;
+  text-shadow: 2px 1px rgb(77, 77, 77);
 }
 
 #custom-nav .dropdown-menu {
@@ -248,7 +249,6 @@ body {
 }
 
 .nameme {
-  background-color: rgb(199, 196, 194);
   text-align: center;
   margin-top: 20%;
   padding: 0;
