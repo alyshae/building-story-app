@@ -8,17 +8,6 @@ class StoriesController < ApplicationController
     @stories = Story.all
   end
 
-  def show
-  end
-
-  def edit
-  end
-
-  def update
-    @story.update_attributes(story_params)
-    redirect_to building_path(@building)
-  end
-
   def new
     @story = Story.new
   end
@@ -36,6 +25,17 @@ class StoriesController < ApplicationController
     else
       flash[:error] = @story.errors.full_messages
     end
+    redirect_to building_path(@building)
+  end
+
+  def show
+  end
+
+  def edit
+  end
+
+  def update
+    @story.update_attributes(story_params)
     redirect_to building_path(@building)
   end
 
